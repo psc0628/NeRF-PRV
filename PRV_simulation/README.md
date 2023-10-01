@@ -5,7 +5,9 @@ This folder contains the simulation system for our PRV-based active NeRF reconst
 ## Installion
 
 These libraries need to be installed: opencv 4.4.0, PCL 1.9.1, Eigen 3.3.9, OctoMap 1.9.6, Gurobi 10.0.0 (free for academic use), and JsonCpp.
-Our codes can be compiled by Visual Studio 2022 with c++ 14 and run on Windows 11.  
+
+Our codes can be compiled by Visual Studio 2022 with c++ 14 and run on Windows 11.
+
 For other system, please check the file read/write or multithreading functions in the codes.
 
 ## Main Usage
