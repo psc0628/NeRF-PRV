@@ -4,7 +4,7 @@ This folder contains scripts to generate point clouds for simulated imaging.
 
 ## Installion
 
-Follow ["Sampling color and geometry point clouds from ShapeNet dataset"](https://github.com/mmspg/mesh-sampling) to install environment with pymeshlab 2021.10 for get_mesh_sampling.py.
+Follow ["Sampling color and geometry point clouds from ShapeNet dataset"](https://github.com/mmspg/mesh-sampling) to install the environment with pymeshlab 2021.10 for get_mesh_sampling.py.  
 Install another environment with pymeshlab 2022.2.post4 for get_ply_from_mesh.py.
 
 ## Usage
