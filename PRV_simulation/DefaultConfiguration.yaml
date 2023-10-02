@@ -1,0 +1,50 @@
+%YAML:1.0
+pre_path: "D:/Data/NeRF_coverage/"
+model_path: "../../3D_models/"
+shape_net: "E:/HRL/ShapeNetCore.v2/"
+orginalviews_path: "../../view_space/Tammes_sphere/"
+viewspace_path: "../../view_space/Hemisphere/"
+instant_ngp_path: "D:/Software/instant-ngp/scripts/"
+pvb_path: "D:/Networks_pytorch/ConvNeXt-V2/"
+is_shape_net: 1
+id_of_batch: -1
+name_of_pcd: "LM5"
+num_of_thread: 20
+method_of_IG : 0
+octomap_resolution: 0.00625
+ground_truth_resolution: 0.002
+coverage_view_num_max: 50
+coverage_view_num_add: 2
+points_size_cloud: 5
+n_steps: 2500
+evaluate: 0
+ensemble_num: 5
+object_pixel_rate: 0.035
+num_of_neighbors_with_self: 1
+num_of_choose: 64
+num_of_random_test: 10
+num_of_max_iteration: 64
+num_of_most_cover: 1
+cost_on: 0
+cost_rate: 1.0
+visit_weight_type: 1
+trunc_threshold: 10
+approaching_threshold: 0.03
+show: 0
+num_of_views : 540
+num_of_novel_test_views : 100
+ray_casting_aabb_scale : 1
+view_space_radius : 0.3
+color_width: 1280
+color_height: 720
+color_fx: 9.1560668945312500e+02
+color_fy: 9.1332666015625000e+02
+color_ppx: 6.4714532470703125e+02
+color_ppy: 3.7251531982421875e+02
+color_model: 2
+color_k1: 1.2042199820280075e-01
+color_k2: -2.1373499929904938e-01
+color_k3: 5.3860000334680080e-03
+color_p1: -2.1210000850260258e-03
+color_p2: 0.
+depth_scale: 1.0000000474974513e-03

@@ -14,13 +14,13 @@ For other system, please check the file read/write or multithreading functions i
 
 DefaultConfiguration.yaml contains most parameters.
 
-The mode of the system should be input in the Console. These modes are for different functions as follows.  
+The mode of the system should be input in the Console. These modes are for different functions as follows.
 
 Then give the object model names in the Console (-1 to break input).
 
 ## Dataset Generation
 
-You may download our processed Required Number of Views Dataset from [Kaggle](). Or use the following instructions to process 3D models.
+You may download our processed [Required Number of Views Dataset](). Or use the following instructions to process 3D models.
 
 ### A. Object 3D Model Dataset
 
@@ -35,7 +35,7 @@ Note that this process takes a lot of time for a large number of objects.
 
 #### B.1 View Space
 
-Use our processed view spaces in Hemisphere subfolder.  
+Use our processed view spaces in Hemisphere subfolder.
 Or you want to generate them:
 
 1. Download Tammes_sphere from [Tammes-problem](https://github.com/XiangjingLai/Tammes-problem).
@@ -62,3 +62,35 @@ Follow [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/instan
 2. Run with mode = 4 (InstantNGP).
 3. Input names in B.2 generated clean_names.txt and -1.
 4. Run "python train_server.py" at the same time.
+
+#### B.5 Curve Fitting for Each Object
+
+Follow [origin_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/Origin_scripts) folder to use Origin to label objects.  
+
+Since Origin cannot process too much data, we split all objects into some batchs (3000 for each), e.g., named ShapeNet_0.
+
+#### B.6 Label Each Object
+
+1. Run with mode = 5 (ReadLabel).
+2. Input names in B.2 generated clean_names.txt and -1.
+3. Run with mode = 6 (GetDataset).
+4. Input names in B.2 generated clean_names.txt and -1.
+
+## PRVNet
+
+Follow [PRVnet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVnet) folder to setup ConvNeXt-V2 environment and to use our PRVNet.
+
+## Statistics Comparsion
+
+1. Run with mode = 7 (TestObjects) with -1.
+2. Run "python train_server.py" in [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/instantngp_scripts).
+
+## View Planning Comparsion
+
+1. Change pvb_path and instant_ngp_path in DefaultConfiguration.yaml.
+2. Run with mode = 21 (ViewPlanning).
+3. Input names that you want to test and -1.
+4. For ensemble-based methods, Run "python train_server.py" in [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/instantngp_scripts).
+5. For our PRV-based mothod, Run "python infer_server.py" in [PRVnet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVnet).
+
+Change evaluate to 1 in DefaultConfiguration.yaml to enable final evaluating with instantngp.

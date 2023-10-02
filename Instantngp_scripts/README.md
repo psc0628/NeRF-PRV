@@ -1,4 +1,4 @@
-# ShapeNet_scripts
+# Instantngp_scripts
 
 This folder contains scripts to interact with instant-ngp.
 
