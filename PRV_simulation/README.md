@@ -91,6 +91,6 @@ Follow [PRVnet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVnet) folder to 
 2. Run with mode = 21 (ViewPlanning).
 3. Input names that you want to test and -1.
 4. For ensemble-based methods, Run "python train_server.py" in [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/instantngp_scripts).
-5. For our PRV-based mothod, Run "python infer_server.py" in [PRVnet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVnet).
+5. For our PRV-based mothod, Run "python infer_server.py" in [PRVnet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVNet).
 
 Change evaluate to 1 in DefaultConfiguration.yaml to enable final evaluating with instantngp.
