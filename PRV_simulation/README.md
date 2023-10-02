@@ -56,7 +56,7 @@ Or you want to generate them:
 
 #### B.4 Plot PSNR for Each Object
 
-Follow [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/instantngp_scripts) folder to setup instantngp environment.
+Follow [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/Instantngp_scripts) folder to setup instantngp environment.
 
 1. Change instant_ngp_path in DefaultConfiguration.yaml.
 2. Run with mode = 4 (InstantNGP).
@@ -78,19 +78,19 @@ Since Origin cannot process too much data, we split all objects into some batchs
 
 ## PRVNet
 
-Follow [PRVnet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVnet) folder to setup ConvNeXt-V2 environment and to use our PRVNet.
+Follow [PRVNet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVNet) folder to setup ConvNeXt-V2 environment and to use our PRVNet.
 
 ## Statistics Comparsion
 
 1. Run with mode = 7 (TestObjects) with -1.
-2. Run "python train_server.py" in [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/instantngp_scripts).
+2. Run "python train_server.py" in [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/Instantngp_scripts).
 
 ## View Planning Comparsion
 
 1. Change pvb_path and instant_ngp_path in DefaultConfiguration.yaml.
 2. Run with mode = 21 (ViewPlanning).
 3. Input names that you want to test and -1.
-4. For ensemble-based methods, Run "python train_server.py" in [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/instantngp_scripts).
-5. For our PRV-based mothod, Run "python infer_server.py" in [PRVnet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVNet).
+4. For ensemble-based methods, Run "python train_server.py" in [instantngp_scripts](https://github.com/psc0628/NeRF-PRV/tree/main/Instantngp_scripts).
+5. For our PRV-based mothod, Run "python infer_server.py" in [PRVNet](https://github.com/psc0628/NeRF-PRV/tree/main/PRVNet).
 
 Change evaluate to 1 in DefaultConfiguration.yaml to enable final evaluating with instantngp.
