@@ -4,7 +4,7 @@ This folder contains scripts for curve fitting using OriginPro.
 
 ## Installion
 
-Install OriginPro (~= 2023b).
+Install [OriginPro](https://www.originlab.com/) (~= 2023b).
 
 ## Usage
 
